@@ -1,7 +1,7 @@
 package com.intelligrape.androidgitdemo;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,14 +15,14 @@ public class Activity8 extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_8);
-        Button btn=(Button) findViewById(R.id.screen8);
+        Button btn = (Button) findViewById(R.id.screen8);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //:TODO Handle button click action
             }
         });
-        Log.i("NewAdd","NewAdde");
+        Log.i("NewAdd", "NewAdde");
     }
 
     @Override
