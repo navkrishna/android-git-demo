@@ -8,12 +8,12 @@ import android.view.MenuItem;
 /**
  * MainActivity of the class
  */
-public class MainActivity extends AppCompatActivity {
+public class Screen4 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_screen4);
     }
 
     @Override
