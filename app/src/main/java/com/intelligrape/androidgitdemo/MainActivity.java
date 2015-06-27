@@ -12,6 +12,7 @@ import android.view.View;
  */
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Screen2.class));
             }
         });
+
+        findViewById(R.id.button_screen3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,Screen3Activity.class));
+            }
+        });
+
+
+
     }
 
     @Override

@@ -22,6 +22,7 @@
         </activity>
         <activity android:name=".Screen2"
             android:screenOrientation="portrait" />
+        <activity android:name=".Screen3Activity"/>
     </application>
 
 </manifest>
