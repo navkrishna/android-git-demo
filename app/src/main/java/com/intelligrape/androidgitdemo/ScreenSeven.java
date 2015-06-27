@@ -4,14 +4,20 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 
-public class ScreenSeven extends ActionBarActivity {
+public class ScreenSeven extends ActionBarActivity implements View.OnClickListener {
 
+    Button button1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen_seven);
+        setContentView(R.layout.activity_main);
+        button1 = (Button) findViewById(R.id.button_name1);
+        button1.setOnClickListener(this);
     }
 
     @Override
@@ -34,5 +40,14 @@ public class ScreenSeven extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.button_name1:
+                Toast.makeText(this, "Button1 is clicked", Toast.LENGTH_LONG).show();
+                break;
+        }
     }
 }
