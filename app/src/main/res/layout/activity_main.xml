@@ -21,12 +21,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Screen4" />
-
+    
     <Button
-        android:id="@+id/screen1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/buttonScreen1" />
+        android:text="@string/buttonScreen1"
+        android:id="@+id/screen1"
+        />
 
     <Button
         android:id="@+id/button_screen2"
@@ -38,7 +39,8 @@
         android:id="@+id/button_screen3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Screen3" />
+        android:text="Screen3"
+        />
 
     <Button
         android:id="@+id/button_screen5"
@@ -49,5 +51,12 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="115dp"
         android:text="Screen5" />
+    <Button
+        android:id="@+id/button_screen8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Screen8"
+        />
+
 
 </LinearLayout>
