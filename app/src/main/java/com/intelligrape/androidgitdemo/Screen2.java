@@ -8,7 +8,7 @@ import android.widget.Toast;
 /**
  * Created by ttnd on 27/6/15.
  */
-public class Screen2 extends Activity{
+public class Screen2 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class Screen2 extends Activity{
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Screen2.this,"Screen 2",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Screen2.this, "Screen 2", Toast.LENGTH_SHORT).show();
             }
         });
     }
