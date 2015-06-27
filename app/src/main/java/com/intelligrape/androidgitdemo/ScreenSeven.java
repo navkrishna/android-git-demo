@@ -24,7 +24,6 @@ public class ScreenSeven extends ActionBarActivity implements View.OnClickListen
                 Toast.makeText(ScreenSeven.this,"Welcome to screen 7",Toast.LENGTH_LONG).show();
             }
         });
-        setContentView(R.layout.activity_main);
         button1 = (Button) findViewById(R.id.button_name1);
         button1.setOnClickListener(this);
     }
