@@ -2,11 +2,12 @@ package com.intelligrape.androidgitdemo;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class Screen1 extends ActionBarActivity {
+public class Screen1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
