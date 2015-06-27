@@ -16,8 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button_screen5 = (Button) findViewById(R.id.button_screen5);
-        button_screen5.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button_screen5).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,Screen5_Activity.class);
