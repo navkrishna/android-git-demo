@@ -12,18 +12,26 @@
         android:id="@+id/text_view_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="2dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:text="@string/git_demo" />
+        android:layout_marginLeft="2dp"
+        android:text="@string/git_demo"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <Button
+        android:id="@+id/button_gif"
         android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_view_heading"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="Click here to see the magic..." />
+
+    <com.intelligrape.androidgitdemo.GifMovieView
+        android:id="@+id/gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button_gif"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
