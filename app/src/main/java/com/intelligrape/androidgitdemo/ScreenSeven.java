@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class ScreenSeven extends ActionBarActivity implements View.OnClickListener {
 
     Button button1;
+    Button mButtonScreenSeven;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
