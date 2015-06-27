@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="direction">
+        <enum name="rightToLeft" value="0" />
+        <enum name="bottomToTop" value="1" />
+        <enum name="leftToRight" value="2" />
+        <enum name="topToBottom" value="3" />
+    </attr>
+
+    <declare-styleable name="MultiDirectionSlidingDrawer">
+        <attr name="handle" format="reference" />
+        <attr name="content" format="reference" />
+        <attr name="direction" />
+        <attr name="bottomOffset" format="dimension" />
+        <attr name="topOffset" format="dimension" />
+        <attr name="allowSingleTap" format="boolean" />
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FlipViewController">
+        <attr name="orientation" format="enum">
+            <enum name="vertical" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+        <attr name="animationBitmapFormat" format="enum">
+            <enum name="ARGB_8888" value="0" />
+            <enum name="ARGB_4444" value="1" />
+            <enum name="RGB_565" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="PageCurlView">
+
+        <!-- Enable/Disable debug mode -->
+        <attr name="enableDebugMode" format="boolean" />
+        <!-- Curl speed  the animation moves in px/frame -->
+        <attr name="curlSpeed" format="integer" />
+        <!-- FPS our animation will run -->
+        <attr name="updateRate" format="integer" />
+        <!-- Pixel offset the page will have from the curl edge -->
+        <attr name="initialEdgeOffset" format="integer" />
+        <!-- The curl mode to apply -->
+        <attr name="curlMode">
+            <enum name="Simple" value="0" />
+            <enum name="Dynamic" value="1" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="GifMoviewView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifMoviewViewStyle" format="reference" />
+    </declare-styleable>
+
+</resources>
