@@ -9,9 +9,9 @@ import android.widget.Button;
 import android.widget.Toast;
 
 
-public class ScreenSeven extends ActionBarActivity {
-    private Button mButtonScreenSeven;
+public class ScreenSeven extends ActionBarActivity implements View.OnClickListener {
 
+    Button button1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,9 @@ public class ScreenSeven extends ActionBarActivity {
                 Toast.makeText(ScreenSeven.this,"Welcome to screen 7",Toast.LENGTH_LONG).show();
             }
         });
+        setContentView(R.layout.activity_main);
+        button1 = (Button) findViewById(R.id.button_name1);
+        button1.setOnClickListener(this);
     }
 
     @Override
@@ -45,5 +48,14 @@ public class ScreenSeven extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.button_name1:
+                Toast.makeText(this, "Button1 is clicked", Toast.LENGTH_LONG).show();
+                break;
+        }
     }
 }
