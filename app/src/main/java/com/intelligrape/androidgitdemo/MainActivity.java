@@ -18,11 +18,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.screen1).setOnClickListener(new View.OnClickListener() {
-                                                          @Override
-                                                          public void onClick(View view) {
-                                                              startActivity(new Intent(MainActivity.this, Screen1.class));
-                                                          }
-                                                      });
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Screen1.class));
+            }
+        });
 
         findViewById(R.id.button_screen2).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +34,14 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button_screen3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Screen3Activity.class));
+                startActivity(new Intent(MainActivity.this, Screen3Activity.class));
+            }
+        });
+
+        findViewById(R.id.button_screen8).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Activity8.class));
             }
         });
 
