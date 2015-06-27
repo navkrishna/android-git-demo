@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 
 public class Screen5_Activity extends Activity {
@@ -15,6 +16,11 @@ public class Screen5_Activity extends Activity {
         setContentView(R.layout.screen5);
 
         btn_screen5 = (Button) findViewById(R.id.button_screen5);
+
+    }
+
+
+    public void goToScreen6(View v){
 
     }
 
