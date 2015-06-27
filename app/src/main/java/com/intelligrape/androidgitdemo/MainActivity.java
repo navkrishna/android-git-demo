@@ -1,6 +1,7 @@
 package com.intelligrape.androidgitdemo;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,11 +12,19 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-
+    Button mButton7;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mButton7 = (Button) findViewById(R.id.button_redirect_screen7);
+        mButton7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent redirectScreenSeven = new Intent(MainActivity.this, ScreenSeven.class);
+                startActivity(redirectScreenSeven);
+            }
+        });
 
     }
 
