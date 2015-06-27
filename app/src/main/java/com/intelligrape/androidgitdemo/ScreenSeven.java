@@ -4,14 +4,25 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 
 public class ScreenSeven extends ActionBarActivity {
+    private Button mButtonScreenSeven;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_seven);
+        mButtonScreenSeven = (Button)findViewById(R.id.button_screen7);
+        mButtonScreenSeven.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ScreenSeven.this,"Welcome to screen 7",Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override
