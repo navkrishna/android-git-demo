@@ -20,6 +20,8 @@
             android:name=".Screen1"
             android:label="@string/title_activity_screen1" >
         </activity>
+        <activity android:name=".Screen2"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
