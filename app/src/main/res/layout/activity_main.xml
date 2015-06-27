@@ -33,5 +33,14 @@
         android:text="Screen3"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Screen5"
+        android:id="@+id/button_screen5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="115dp" />
 
-</LinearLayout>
+</RelativeLayout>
