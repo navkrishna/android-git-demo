@@ -13,13 +13,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="2dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
         android:text="@string/git_demo" />
 
     <Button
         android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_view_heading"
         android:layout_marginTop="20dp"
-        android:text="Click me to see the magic" />
+        android:text="Click here to see the magic..." />
 
 </RelativeLayout>
