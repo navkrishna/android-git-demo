@@ -16,11 +16,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         findViewById(R.id.screen1).setOnClickListener(new View.OnClickListener() {
+                                                          @Override
+                                                          public void onClick(View view) {
+                                                              startActivity(new Intent(MainActivity.this, Screen1.class));
+                                                          }
+                                                      });
+
+        findViewById(R.id.button_screen2).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Screen1.class));
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Screen2.class));
             }
         });
     }
